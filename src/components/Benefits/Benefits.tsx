@@ -1,16 +1,6 @@
-import BenefitSection from "./BenefitSection"
-
-import { benefits } from "@/data/benefits"
-
-const Benefits: React.FC = () => {
-    return (
-        <div id="features">
-            <h2 className="sr-only">Features</h2>
-            {benefits.map((item, index) => {
-                return <BenefitSection key={index} benefit={item} imageAtRight={index % 2 !== 0} />
-            })}
-        </div>
-    )
-}
-
-export default Benefits
+export const heroDetails = {
+  heading: "Create Smart QR Codes That Connect Customers to Your Business Instantly",
+  subheading:
+    "Generate, customize, and share powerful QR codes for products, pages, and promotions — plus get access to premium digital tools, websites, and media services when you need them.",
+  centerImageSrc: "/images/hero-mockup.png",
+};
