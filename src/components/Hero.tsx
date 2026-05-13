@@ -21,12 +21,19 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">
+                    Instant QR Codes, Digital Tools, and Business Solutions in One Place
+                </h1>
+
+                <p className="mt-4 text-foreground max-w-lg mx-auto">
+                    Create, share, and grow your business with fast, modern tools built to convert visitors into customers. Simple, reliable, and ready to use.
+                </p>
+
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
                     <AppStoreButton dark />
                     <PlayStoreButton dark />
                 </div>
+
                 <Image
                     src={heroDetails.centerImageSrc}
                     width={384}
