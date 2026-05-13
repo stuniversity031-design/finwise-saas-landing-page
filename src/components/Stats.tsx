@@ -1,21 +1,31 @@
-import { stats } from "@/data/stats"
+import React from 'react';
 
-const Stats: React.FC = () => {
+const Stats = () => {
     return (
-        <section id="stats" className="py-10 lg:py-20">
-            <div className="grid sm:grid-cols-3 gap-8">
-                {stats.map(stat => (
-                    <div key={stat.title} className="text-center sm:text-left max-w-md sm:max-w-full mx-auto">
-                        <h3 className="mb-5 flex items-center gap-2 text-3xl font-semibold justify-center sm:justify-start">
-                            {stat.icon}
-                            {stat.title}
-                        </h3>
-                        <p className="text-foreground-accent">{stat.description}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
-    )
-}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center py-10">
 
-export default Stats
+            <div>
+                <p className="text-3xl font-bold text-slate-900">10K+</p>
+                <p className="text-sm text-slate-500 mt-1">QR Codes Generated</p>
+            </div>
+
+            <div>
+                <p className="text-3xl font-bold text-slate-900">2.5K+</p>
+                <p className="text-sm text-slate-500 mt-1">Active Businesses</p>
+            </div>
+
+            <div>
+                <p className="text-3xl font-bold text-slate-900">99.9%</p>
+                <p className="text-sm text-slate-500 mt-1">Uptime Reliability</p>
+            </div>
+
+            <div>
+                <p className="text-3xl font-bold text-slate-900">24/7</p>
+                <p className="text-sm text-slate-500 mt-1">Support Availability</p>
+            </div>
+
+        </div>
+    );
+};
+
+export default Stats;
