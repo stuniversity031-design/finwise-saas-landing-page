@@ -1,5 +1,6 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
-    centerImageSrc: '/images/hero-mockup.webp',
-}
+  heading: "Create Smart QR Codes That Connect Customers to Your Business Instantly",
+  subheading:
+    "Generate, customize, and share powerful QR codes for products, pages, and promotions — plus get access to premium digital tools, websites, and media services when you need them.",
+  centerImageSrc: "/images/hero-mockup.png",
+};
