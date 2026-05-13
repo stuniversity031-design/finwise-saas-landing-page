@@ -1,31 +1,30 @@
 import React from 'react';
-import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
 
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
     return (
-        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
-            {testimonials.map((testimonial, index) => (
-                <div
-                    key={index}
-                    className=""
-                >
-                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
-                        <Image
-                            src={testimonial.avatar}
-                            alt={`${testimonial.name} avatar`}
-                            width={50}
-                            height={50}
-                            className="rounded-full shadow-md"
-                        />
-                        <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground-accent">{testimonial.role}</p>
-                        </div>
-                    </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
-                </div>
-            ))}
+        <div className="grid md:grid-cols-3 gap-6 mt-10">
+
+            <div className="p-6 bg-white border rounded-2xl shadow-sm">
+                <p className="text-slate-600">
+                    “This made it insanely easy to share my business. QR codes actually brought in new customers.”
+                </p>
+                <p className="mt-4 font-semibold text-slate-900">— Small Business Owner</p>
+            </div>
+
+            <div className="p-6 bg-white border rounded-2xl shadow-sm">
+                <p className="text-slate-600">
+                    “Clean, fast, and super simple. Exactly what I needed for my shop.”
+                </p>
+                <p className="mt-4 font-semibold text-slate-900">— Retail Store Manager</p>
+            </div>
+
+            <div className="p-6 bg-white border rounded-2xl shadow-sm">
+                <p className="text-slate-600">
+                    “We replaced our old links with QR codes and saw more engagement instantly.”
+                </p>
+                <p className="mt-4 font-semibold text-slate-900">— Marketing Team</p>
+            </div>
+
         </div>
     );
 };
