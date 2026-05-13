@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import AppStoreButton from './AppStoreButton';
-import PlayStoreButton from './PlayStoreButton';
-
 const Hero: React.FC = () => {
     return (
         <section
@@ -19,42 +16,53 @@ const Hero: React.FC = () => {
             {/* Glow effect */}
             <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-200 blur-[120px] opacity-30 rounded-full -z-10" />
 
-            <div className="text-center max-w-3xl mx-auto">
-                
+            <div className="text-center max-w-4xl mx-auto">
+
                 {/* Headline */}
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-                    Smart QR Codes & Digital Tools to Grow Your Business Faster
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                    AI-Powered Websites, Animations & Digital Tools Built for the Future
                 </h1>
 
                 {/* Subheadline */}
-                <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-                    Create, share, and manage powerful digital tools that turn visitors into customers.
-                    Simple, fast, and built for modern businesses.
+                <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                    I design and build premium websites, animated media, apps, and AI solutions
+                    that make brands stand out and operate smarter.
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a
+                        href="#demo"
+                        className="px-8 py-3 bg-black text-white rounded-xl font-semibold hover:opacity-90 transition"
+                    >
+                        Request a Demo
+                    </a>
+
+                    <a
+                        href="#pricing"
+                        className="px-8 py-3 border border-black rounded-xl font-semibold hover:bg-black hover:text-white transition"
+                    >
+                        View Services
+                    </a>
                 </div>
 
                 {/* Image */}
-                <div className="mt-14">
+                <div className="mt-16">
                     <Image
                         src="/images/hero-mockup.png"
-                        width={420}
-                        height={360}
+                        width={460}
+                        height={380}
                         quality={100}
                         priority
                         unoptimized
-                        alt="app mockup"
+                        alt="digital services mockup"
                         className="mx-auto drop-shadow-2xl"
                     />
                 </div>
 
                 {/* Trust line */}
-                <p className="mt-8 text-sm text-slate-500">
-                    Trusted by modern businesses building smarter digital experiences
+                <p className="mt-10 text-sm text-slate-500">
+                    Websites • Animations • AI Tools • Apps • Automation for modern brands
                 </p>
             </div>
         </section>
