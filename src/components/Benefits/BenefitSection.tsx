@@ -4,33 +4,33 @@ const Benefits = () => {
     return (
         <div className="grid md:grid-cols-3 gap-6">
 
-            {/* Feature 1 */}
-            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-lg transition">
                 <h3 className="text-lg font-semibold text-slate-900">
-                    Instant QR Code Generation
+                    AI Websites & Landing Pages
                 </h3>
                 <p className="mt-2 text-slate-600">
-                    Create high-quality, scannable QR codes instantly for websites, products, menus, or digital campaigns.
+                    High-converting websites built with modern frameworks, animations, and AI integrations
+                    that make your brand look premium and future-ready.
                 </p>
             </div>
 
-            {/* Feature 2 */}
-            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-lg transition">
                 <h3 className="text-lg font-semibold text-slate-900">
-                    Built for Real Business Use
+                    Animations, Clips & Visual Content
                 </h3>
                 <p className="mt-2 text-slate-600">
-                    Designed to help businesses turn offline and online traffic into measurable customer engagement.
+                    Custom animated clips, motion graphics, cartoon visuals, and AI-generated media
+                    for YouTube, ads, apps, and digital storytelling.
                 </p>
             </div>
 
-            {/* Feature 3 */}
-            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-lg transition">
                 <h3 className="text-lg font-semibold text-slate-900">
-                    Fast, Clean & Ready to Share
+                    Apps, Automation & AI Tools
                 </h3>
                 <p className="mt-2 text-slate-600">
-                    Generate and share QR codes in seconds across flyers, packaging, websites, and social media.
+                    From smart apps to workflow automation and AI assistants, I build tools that
+                    save time, increase reach, and create real digital leverage for your business.
                 </p>
             </div>
 
